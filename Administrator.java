@@ -36,9 +36,11 @@ public class Administrator {
                 }
                 for (int j=0;j<member;j++){
                     for (Student s:studentList){
-                        for (int i=0;i<s.getCurriculum().size();i++){
+                        int n=s.getCurriculum().size();
+                        for (int i=0;i<n;i++){
                             if (s.getCurriculum().get(i).getCourseID().equals(c.getCourseID())&&s.getCurriculum().get(i).getCredit()==credit){
                                 s.getCurriculum().remove(s.getCurriculum().get(i));
+                                n=n-1;
                             }
                         }
                     }
