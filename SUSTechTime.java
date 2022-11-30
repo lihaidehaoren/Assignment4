@@ -18,4 +18,16 @@ public class SUSTechTime {
     public String getEndTime() {
         return EndTime;
     }
+
+    public Weekday getWeekday(){
+        return weekday;
+    }
+
+    public WeekType getWeekType() {
+        return weekType;
+    }
+
+    public String toString(){
+       return "Course{" + this.getStartTime() + " ~ " + this.getEndTime() + " | " + this.getWeekday()+ " | " + this.getWeekType() + "}";
+    }
 }
