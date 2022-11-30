@@ -28,6 +28,6 @@ public class SUSTechTime {
     }
 
     public String toString(){
-       return "Course{" + this.getStartTime() + " ~ " + this.getEndTime() + " | " + this.getWeekday()+ " | " + this.getWeekType() + "}";
+       return "SUSTechTime{" + this.getStartTime() + " ~ " + this.getEndTime() + " | " + this.getWeekday()+ " | " + this.getWeekType() + " week}";
     }
 }
