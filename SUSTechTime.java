@@ -1,4 +1,3 @@
-enum WeekType {Odd, Even, Every}
 public class SUSTechTime {
     private String StartTime;
     private String EndTime;
