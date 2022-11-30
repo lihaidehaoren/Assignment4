@@ -21,9 +21,17 @@ public class Student {
         }
         if (!flag1){
             for (Course c:curriculum){
-                if (c.getTimeList().get(0)==course.getTimeList().get(0)||c.getTimeList().get(0)==course.getTimeList().get(1)||c.getTimeList().get(1)==course.getTimeList().get(0)||c.getTimeList().get(1)==course.getTimeList().get(1)){
-                    flag=false;
-                    break;
+                if (c.getTimeList().size()>1){
+                    if (c.getTimeList().get(0)==course.getTimeList().get(0)||c.getTimeList().get(0)==course.getTimeList().get(1)||c.getTimeList().get(1)==course.getTimeList().get(0)||c.getTimeList().get(1)==course.getTimeList().get(1)){
+                        flag=false;
+                        break;
+                    }
+                }
+                else if (c.getTimeList().size()==1){
+                    if (c.getTimeList().get(0)==course.getTimeList().get(0)){
+                        flag=false;
+                        break;
+                    }
                 }
             }
         }
